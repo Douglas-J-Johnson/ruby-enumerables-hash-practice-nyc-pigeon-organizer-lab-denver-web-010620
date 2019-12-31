@@ -61,12 +61,16 @@ def break_out_pairs(hash_pairs)
   return expanded_hash_pairs
 end
 
+def add_to_names(hash_data, names_list)
+  
+end
+
 def get_names(data)
   names = []
 
-  data[:color]
-  data[:gender]
-  data[:lives]
+  add_to_names(data[:color], names)
+  add_to_names(data[:gender], names)
+  add_to_names(data[:lives], names)
 
   return names
 end
