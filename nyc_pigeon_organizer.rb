@@ -111,9 +111,9 @@ def nyc_pigeon_organizer(data)
 
   pigeon_names.each do |name|
     pigeon = {name => {
-      :color => find_by_name(pigeon_colors, name),
-      :gender => find_by_name(pigeon_genders, name),
-      :lives => find_by_name(pigeon_locations, name)
+      :color => pigeon_colors[find_name_in_hash_array(pigeon_colors, name)],
+      :gender => pigeon_colors[find_name_in_hash_array(pigeon_genders, name)],
+      :lives => pigeon_colors[find_name_in_hash_array(pigeon_locations, name)]
     }
     pigeon_list << pigeon
   end
