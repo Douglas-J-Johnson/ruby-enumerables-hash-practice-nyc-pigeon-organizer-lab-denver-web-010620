@@ -10,7 +10,6 @@ end
 
 def condense_pairs(hash_array)
   pp hash_array
-  puts hash_array.length
 
   condensed_hash_array = []
   condensed_index = 0
@@ -20,6 +19,7 @@ def condense_pairs(hash_array)
 
   hash_array.each do |hash|
     puts hash
+      puts hash_array.length
     name = hash.key
     value = hash.value
 
