@@ -16,8 +16,6 @@ def find_name_in_hash_array(hash_array, name)
 end
 
 def condense_pairs(hash_array)
-  #pp hash_array
-
   condensed_hash_array = []
   condensed_index = 0
 
@@ -38,7 +36,6 @@ def condense_pairs(hash_array)
     end
   end
 
-  pp condensed_hash_array
   return condensed_hash_array
 end
 
