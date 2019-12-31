@@ -33,12 +33,12 @@ def condense_pairs(hash_array)
 
     puts name
 
-    if find_name_in_hash_array(condensed_hash_array,name)
-      condensed_index = find_name_in_hash_array(condensed_hash_array,name)
-      condensed_hash_array[condensed_index][name].push(value)
-    else
-      condensed_hash_array.push(hash)
-    end
+    #if find_name_in_hash_array(condensed_hash_array,name)
+    #  condensed_index = find_name_in_hash_array(condensed_hash_array,name)
+    #  condensed_hash_array[condensed_index][name].push(value)
+    #else
+    #  condensed_hash_array.push(hash)
+    #end
   end
 
   pp condensed_hash_array
