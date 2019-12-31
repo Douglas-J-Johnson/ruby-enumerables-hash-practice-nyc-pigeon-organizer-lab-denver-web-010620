@@ -119,7 +119,6 @@ def nyc_pigeon_organizer(data)
       :lives => pigeon_locations[find_name_in_hash_array(pigeon_locations, name)][name]
     }}
     pigeon_list.merge!(pigeon)
-    #pigeon_list << pigeon
   end
 
   pp pigeon_list
