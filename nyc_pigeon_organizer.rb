@@ -1,9 +1,18 @@
 require 'pp'
 
 def find_name_in_hash_array(hash_array, name)
-  found_index = nil
+  hash  = {}
 
-  return found_index
+  for i in 0...hash_array.length
+    hash = hash_array[i]
+    hash.each do |k, v|
+      if k == name then
+        return i
+      end
+    end
+  end
+
+  return nil
 end
 
 def condense_pairs(hash_array)
