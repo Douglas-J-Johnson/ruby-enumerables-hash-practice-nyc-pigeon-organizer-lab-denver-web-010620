@@ -10,7 +10,7 @@ end
 
 def condense_pairs(hash_array)
   pp hash_array
-  puts "Hello"
+
   condensed_hash_array = []
   condensed_index = 0
 
@@ -21,12 +21,12 @@ def condense_pairs(hash_array)
     name = hash_array[index].key
     value = hash_array[index].value
 
-    if find_name_in_hash_array(condensed_hash_array,name)
-      condensed_index = find_name_in_hash_array(condensed_hash_array,name)
-      condensed_hash_array[condensed_index][name].push(value)
-    else
+    #if find_name_in_hash_array(condensed_hash_array,name)
+    #  condensed_index = find_name_in_hash_array(condensed_hash_array,name)
+    #  condensed_hash_array[condensed_index][name].push(value)
+    #else
       condensed_hash_array.push({name => [value]})
-    end
+    #end
   end
 
   pp condensed_hash_array
