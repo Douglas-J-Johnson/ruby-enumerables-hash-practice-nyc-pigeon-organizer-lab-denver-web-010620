@@ -110,6 +110,11 @@ def nyc_pigeon_organizer(data)
   pegeon_genders = get_genders(data)
   pigeon_locations = get_lives(data)
 
+  pp pigeon_names
+  pp pigeon_colors
+  pp pigeon_genders
+  pp pigeon_locations
+
   pigeon_names.each do |name|
     pigeon = {name => {
       :color => pigeon_colors[find_name_in_hash_array(pigeon_colors, name)][name],
