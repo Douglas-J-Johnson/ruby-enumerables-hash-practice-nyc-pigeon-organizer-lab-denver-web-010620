@@ -119,6 +119,6 @@ def nyc_pigeon_organizer(data)
     #pigeon_list << pigeon
   end
 
-  pp pigeon_list
+  #pp pigeon_list
   return pigeon_list
 end
