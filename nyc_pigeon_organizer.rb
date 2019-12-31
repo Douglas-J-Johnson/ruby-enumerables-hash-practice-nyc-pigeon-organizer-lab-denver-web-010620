@@ -10,6 +10,7 @@ end
 
 def condense_pairs(hash_array)
   pp hash_array
+  puts hash_array.length
 
   condensed_hash_array = []
   condensed_index = 0
