@@ -32,7 +32,7 @@ def condense_pairs(hash_array)
 
     if find_name_in_hash_array(condensed_hash_array,name)
       condensed_index = find_name_in_hash_array(condensed_hash_array,name)
-      condensed_hash_array[condensed_index] = {name => [value]}
+      condensed_hash_array[condensed_index][name].push(value)
     else
       condensed_hash_array.push({name => [value]})
     end
