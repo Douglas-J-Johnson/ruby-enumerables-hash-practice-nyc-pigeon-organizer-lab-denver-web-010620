@@ -116,6 +116,7 @@ def nyc_pigeon_organizer(data)
       :lives => pigeon_colors[find_name_in_hash_array(pigeon_locations, name)][name]
     }}
     pp pigeon
+    pigeon_list.merge!(pigeon)
     #pigeon_list << pigeon
   end
 
