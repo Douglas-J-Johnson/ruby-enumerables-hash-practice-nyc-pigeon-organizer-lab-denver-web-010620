@@ -18,6 +18,7 @@ def condense_pairs(hash_array)
   value = ""
 
   hash_array.each_index do |index|
+    puts index
     name = hash_array[index].key
     value = hash_array[index].value
 
