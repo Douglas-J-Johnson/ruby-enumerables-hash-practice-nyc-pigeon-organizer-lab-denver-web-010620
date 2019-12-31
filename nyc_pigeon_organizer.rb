@@ -3,8 +3,6 @@ require 'pp'
 def find_name_in_hash_array(hash_array, name)
   found_index = nil
 
-  pp hash_array
-
   return found_index
 end
 
