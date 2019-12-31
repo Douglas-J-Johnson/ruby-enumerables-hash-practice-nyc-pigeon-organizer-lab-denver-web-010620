@@ -63,6 +63,7 @@ end
 
 def add_to_names(hash_data, names_list)
 
+  return names_list
 end
 
 def get_names(data)
