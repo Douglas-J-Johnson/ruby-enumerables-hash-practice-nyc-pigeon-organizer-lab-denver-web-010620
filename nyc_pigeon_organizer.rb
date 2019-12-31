@@ -110,7 +110,7 @@ def get_lives(data)
 end
 
 def nyc_pigeon_organizer(data)
-  pp data
+  #pp data
   pigeon_list = {}
   pigeon = {}
   pigeon_names = get_names(data)
@@ -118,7 +118,7 @@ def nyc_pigeon_organizer(data)
   pigeon_genders = get_genders(data)
   pigeon_locations = get_lives(data)
 
-  pp pigeon_names
+  #pp pigeon_names
 
   pigeon_names.each do |name|
     pigeon = {name => {
@@ -129,6 +129,6 @@ def nyc_pigeon_organizer(data)
     pigeon_list.merge!(pigeon)
   end
 
-  pp pigeon_list
+  #pp pigeon_list
   return pigeon_list
 end
