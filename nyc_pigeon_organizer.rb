@@ -11,15 +11,13 @@ end
 def condense_pairs(hash_array)
   pp hash_array
   condensed_hash_array = []
-  hash_item = {}
   name = ""
   value = ""
   condensed_index = 0
 
   hash_array.each_index do |index|
-    hash_item = hash_array[index]
-    name = hash_item.key
-    value = hash_item.value
+    name = hash_array[index].key
+    value = hash_array[index].value
 
     if find_name_in_hash_array(condensed_hash_array,name)
       condensed_index = find_name_in_hash_array(condensed_hash_array,name)
