@@ -19,7 +19,6 @@ def condense_pairs(hash_array)
 
   hash_array.each do |hash|
     puts hash
-      puts hash_array.length
     #name = hash.key
     #value = hash.value
 
