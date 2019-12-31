@@ -104,7 +104,7 @@ def nyc_pigeon_organizer(data)
   pigeon = {}
   pigeon_names = get_names(data)
   pigeon_colors = get_colors(data)
-  pegeon_genders = get_genders(data)
+  pigeon_genders = get_genders(data)
   pigeon_locations = get_lives(data)
 
   pp pigeon_names
