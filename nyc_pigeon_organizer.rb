@@ -32,7 +32,7 @@ def condense_pairs(hash_array)
   end
 
   pp condensed_hash_array
-  return ccondensed_hash_array
+  return condensed_hash_array
 end
 
 def break_out_pairs(hash_pairs)
