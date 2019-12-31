@@ -115,7 +115,8 @@ def nyc_pigeon_organizer(data)
       :gender => pigeon_colors[find_name_in_hash_array(pigeon_genders, name)][name],
       :lives => pigeon_colors[find_name_in_hash_array(pigeon_locations, name)][name]
     }}
-    pigeon_list << pigeon
+    pp pigeon
+    #pigeon_list << pigeon
   end
 
   pp pigeon_list
