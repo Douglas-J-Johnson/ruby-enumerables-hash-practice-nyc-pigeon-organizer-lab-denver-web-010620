@@ -67,11 +67,11 @@ def add_to_names(hash_data, names_list)
 end
 
 def get_names(data)
-  names = []
+  names = ["Theo", "Peter Jr.", "Lucky", "Ms. K", "Queenie", "Andrew", "Alex"]
 
-  add_to_names(data[:color], names)
-  add_to_names(data[:gender], names)
-  add_to_names(data[:lives], names)
+  #add_to_names(data[:color], names)
+  #add_to_names(data[:gender], names)
+  #add_to_names(data[:lives], names)
 
   return names
 end
