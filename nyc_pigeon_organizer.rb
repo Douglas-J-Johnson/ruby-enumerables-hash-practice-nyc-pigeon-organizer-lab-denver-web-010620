@@ -62,7 +62,7 @@ def break_out_pairs(hash_pairs)
 end
 
 def add_to_names(hash_data, names_list)
-  
+
 end
 
 def get_names(data)
