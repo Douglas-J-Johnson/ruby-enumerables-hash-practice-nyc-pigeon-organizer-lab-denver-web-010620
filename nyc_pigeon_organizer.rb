@@ -60,7 +60,7 @@ end
 
 def add_to_names(hash_data, names_list)
   candidate_name = ""
-  
+
   hash_data.each do |key, value|
     for i in 0...value.length
       candidate_name = value[i]
