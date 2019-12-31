@@ -10,10 +10,12 @@ end
 
 def condense_pairs(hash_array)
   pp hash_array
+  puts "Hello"
   condensed_hash_array = []
+  condensed_index = 0
+
   name = ""
   value = ""
-  condensed_index = 0
 
   hash_array.each_index do |index|
     name = hash_array[index].key
