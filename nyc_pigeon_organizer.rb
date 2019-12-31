@@ -7,7 +7,6 @@ def find_name_in_hash_array(hash_array, name)
     hash = hash_array[i]
     hash.each do |k, v|
       if k == name then
-        puts i
         return i
       end
     end
@@ -34,7 +33,8 @@ def condense_pairs(hash_array)
     puts name
 
     if find_name_in_hash_array(condensed_hash_array,name)
-    #  condensed_index = find_name_in_hash_array(condensed_hash_array,name)
+      condensed_index = find_name_in_hash_array(condensed_hash_array,name)
+      print condensed_index
     #  condensed_hash_array[condensed_index][name].push(value)
     else
       puts "new"
