@@ -68,6 +68,7 @@ end
 
 def get_names(data)
   names = ["Theo", "Peter Jr.", "Lucky", "Ms. K", "Queenie", "Andrew", "Alex"]
+  #names = []
 
   #add_to_names(data[:color], names)
   #add_to_names(data[:gender], names)
