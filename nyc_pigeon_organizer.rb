@@ -103,11 +103,21 @@ end
 def nyc_pigeon_organizer(data)
   #pp data
   pigeon_list = {}
+  pigeon = {}
   pigeon_names = get_names(data)
   pigeon_colors = get_colors(data)
   pegeon_genders = get_genders(data)
   pigeon_locations = get_lives(data)
 
-  #pp pigeon_list
+  pigeon_names.each do |name|
+    pigeon = {name => {
+      :color => find_by_name(pigeon_colors, name),
+      :gender => find_by_name(pigeon_genders, name),
+      :lives => find_by_name(pigeon_locations, name)
+    }
+    pigeon_list << pigeon
+  end
+
+  pp pigeon_list
   return pigeon_list
 end
