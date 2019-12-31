@@ -7,6 +7,7 @@ def find_name_in_hash_array(hash_array, name)
     hash = hash_array[i]
     hash.each do |k, v|
       if k == name then
+        puts i
         return i
       end
     end
