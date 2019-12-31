@@ -115,8 +115,8 @@ def nyc_pigeon_organizer(data)
   pigeon_names.each do |name|
     pigeon = {name => {
       :color => pigeon_colors[find_name_in_hash_array(pigeon_colors, name)][name],
-      :gender => pigeon_colors[find_name_in_hash_array(pigeon_genders, name)][name],
-      :lives => pigeon_colors[find_name_in_hash_array(pigeon_locations, name)][name]
+      :gender => pigeon_genders[find_name_in_hash_array(pigeon_genders, name)][name],
+      :lives => pigeon_locations[find_name_in_hash_array(pigeon_locations, name)][name]
     }}
     pigeon_list.merge!(pigeon)
     #pigeon_list << pigeon
