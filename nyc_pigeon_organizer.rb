@@ -3,6 +3,8 @@ require 'pp'
 def find_name_in_hash_array(hash_array, name)
   found_index = nil
 
+  pp hash_array
+
   return found_index
 end
 
@@ -19,12 +21,12 @@ def condense_pairs(hash_array)
     name = hash_item.key
     value = hash_item.value
 
-#    if find_name_in_hash_array(condensed_hash_array,name)
-#      condensed_index = find_name_in_hash_array(condensed_hash_array,name)
-#      condensed_hash_array[condensed_index][name].push(value)
-#    else
-#      condensed_hash_array.push({name => [value]})
-#    end
+    if find_name_in_hash_array(condensed_hash_array,name)
+      condensed_index = find_name_in_hash_array(condensed_hash_array,name)
+      condensed_hash_array[condensed_index][name].push(value)
+    else
+      condensed_hash_array.push({name => [value]})
+    end
   end
 
   pp condensed_hash_array
