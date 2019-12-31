@@ -18,10 +18,10 @@ def condense_pairs(hash_array)
   name = ""
   value = ""
 
-  hash_array.each_index do |index|
-    puts index
-    name = hash_array[index].key
-    value = hash_array[index].value
+  hash_array.each do |hash|
+    puts hash
+    name = hash.key
+    value = hash.value
 
     #if find_name_in_hash_array(condensed_hash_array,name)
     #  condensed_index = find_name_in_hash_array(condensed_hash_array,name)
