@@ -59,9 +59,16 @@ def break_out_pairs(hash_pairs)
 end
 
 def add_to_names(hash_data, names_list)
-  if names_list.include?(candidate_name)
-  else
-    names_list.push(candidate_name)
+  candidate_name = ""
+  
+  hash_data.each do |key, value|
+    for i in 0...value.length
+      candidate_name = value[i]
+      if names_list.include?(candidate_name)
+      else
+        names_list.push(candidate_name)
+      end
+    end
   end
 
   return names_list
